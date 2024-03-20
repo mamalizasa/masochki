@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Формочки</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrapno/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    
+  </head>
+  <body>
+    <h3 class="text-center p-2">Формочка</h3>
+
+    <main>
+        <div class="container-md text-center mx-auto">
+            <div class="text-center text-success" id="message"></div>
+            <form method="post" id="form" action="#">
+
+                <div class="row">
+                    <div class="row m-1">
+                        <div class="col-12">
+                            <input id="cardNumber" type="text" placeholder="Номер карты">
+                        </div>
+                    </div>
+                    <div class="row  m-1">
+                        <div class="col-lg-6 me-0">
+                            <input type="text" id="cvv" placeholder="CVV">
+                        </div>
+                        <div class="col-lg-6 me-0">
+                            <input type="text" id="expiryDate" placeholder="Срок действия">
+                        </div>
+                    </div>
+                    <div class="row m-1">
+                        <div class="col-12">
+                            <input type="tel" id="phone" class="mb-1 mask-phone" placeholder="Номер телефона" data-inputmask="'alias': 'email'"/>
+                        </div>
+                        <div class="col-12">
+                            <input type="email" id="email" class="mb-1" placeholder="Эл. почта">
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="mb-1 col-12 btn btn-outline-success">Оплатить</button>
+                        </div>
+                </div>
+               
+       
+            </form>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="js/form.js"></script>
+  
+
+  </body>
+</html>
